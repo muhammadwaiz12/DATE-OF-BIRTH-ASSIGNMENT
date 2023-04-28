@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Checker</title>
+</head>
+
+<body>
+    <script>
+        var month = prompt("Enter Month of birth")
+        month = month[0].toUpperCase()+month.slice(1).toLowerCase();
+        var date = prompt("Enter date of Birth")
+        var year = prompt("Enter year of birth")
+        var bd = new Date(`${month} ${date} ${year} 00:00:00`)
+        var day = bd.getDay();
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        alert("You were born on "+days[day]);
+    </script>
+</body>
+
+</html>
